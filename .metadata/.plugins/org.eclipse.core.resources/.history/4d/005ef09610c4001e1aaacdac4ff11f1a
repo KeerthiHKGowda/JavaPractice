@@ -1,0 +1,37 @@
+
+public class sumOfAllDigits
+{
+    static void sumOfDigits(int inputNumber)
+    {
+
+        int copyOfInputNumber = inputNumber;
+
+        int sum = 0;
+ 
+        while (copyOfInputNumber != 0)
+        {
+   
+            int lastDigit = copyOfInputNumber%10;
+ 
+        
+            sum = sum + lastDigit;
+ 
+         
+            copyOfInputNumber = copyOfInputNumber/10;
+        }
+ 
+        //P
+        System.out.println("Sum Of All Digits In "+inputNumber+" = "+sum);
+    }
+ 
+    public static void main(String[] args)
+    {
+        sumOfDigits(47862);
+ 
+        sumOfDigits(416872);
+ 
+        sumOfDigits(5674283);
+ 
+        sumOfDigits(475496215);
+    }
+}
